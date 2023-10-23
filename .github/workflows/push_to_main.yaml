@@ -39,8 +39,8 @@
         - name: Build and publish updated image
           run: |
             mvn package
-            docker build . --tag ghcr.io/dafessor/devopscidemo:latest
-            docker push ghcr.io/dafessor/devopscidemo:latest
+            docker build . --tag ghcr.io/cudevlin/devopscidemo:latest
+            docker push ghcr.io/cudevlin/devopscidemo:latest
 
     update_coverage_report:
       needs: run_tests
