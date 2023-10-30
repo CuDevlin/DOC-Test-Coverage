@@ -49,3 +49,11 @@
         pages: write
         id-token: write
       uses: ./.github/workflows/test_coverage_report.yaml
+
+    trigger_cd_workflow:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Trigger CD Workflow
+        uses: ./.github/workflows/deploy-to-minikube.yaml
+        with:
+          workflow: 'CD - Deploy to Minikube using Github Actions'

@@ -1,9 +1,11 @@
 name: CD - Deploy to Minikube using Github Actions
 on:
-  push:
-    branches: [ master ] #main
-  pull_request:
-    branches: [ master ] #main
+  # Called from elsewhere
+  workflow_call:
+  #push:
+    #branches: [ master ] #main
+  #pull_request:
+    #branches: [ master ] #main
 jobs:
   job1:
     name: Build and Deploy to Minikube
