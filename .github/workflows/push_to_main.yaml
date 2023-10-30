@@ -56,5 +56,3 @@
       steps:
       - name: Trigger CD Workflow
         uses: ./.github/workflows/deploy-to-minikube.yaml
-        with:
-          workflow: 'CD - Deploy to Minikube using Github Actions'
