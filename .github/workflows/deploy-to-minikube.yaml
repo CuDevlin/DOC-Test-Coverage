@@ -22,7 +22,7 @@ jobs:
           docker build -f ./Dockerfile -t local/ex7-test-coverage .
           echo -n "Verifying images: "
           docker images
-      - name: Deploy to Minikube
+      - name: Deploy to Minikube #Deploys to Minikube
         run: |
           kubectl apply -f deployment.yaml
           kubectl wait --for=condition=Ready pod -l app=ex7-test-coverage
