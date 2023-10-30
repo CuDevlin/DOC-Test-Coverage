@@ -32,7 +32,7 @@ jobs:
           kubectl get all
       - name: Test service URLs
         run: |
-          echo "SERVICE_URL=$(minikube service ex7-test-coverage --url)
+          echo "SERVICE_URL=$(minikube service ex7-test-coverage --url)"
           kubectl port-forward service/ex7-test-coverage 8080:8080 &> /dev/null &
           sleep 5
           kubectl port-forward service/ex7-test-coverage 8080:8080 &> /dev/null &
