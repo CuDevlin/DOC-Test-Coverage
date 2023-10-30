@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 
 kind: Deployment
-metadeta:
+metadata:
   name: ex7-test-coverage
   labels:
     app: ex7-test-coverage
